@@ -10,9 +10,11 @@ INCLUDE_DIRECTORIES(      ${CUDA_SDK_ROOT_DIR}/common/inc ${CUDA_INCLUDE_DIRS}  
 INCLUDE_DIRECTORIES(      ${CMAKE_SOURCE_DIR}/include                                )
 CUDA_INCLUDE_DIRECTORIES(      ${CMAKE_SOURCE_DIR}/include                                )
 
-INCLUDE_DIRECTORIES(/home/VI/staff/amueller/local/acml4.4.0/ifort64/include)  # I'm sorry ;)
-LINK_Directories(/home/VI/staff/amueller/local/acml4.4.0/ifort64/lib)  # I'm sorry ;)
+#INCLUDE_DIRECTORIES(/home/VI/staff/amueller/local/acml4.4.0/ifort64/include)  # I'm sorry ;)
+#LINK_Directories(/home/VI/staff/amueller/local/acml4.4.0/ifort64/lib)  # I'm sorry ;)
 
+INCLUDE_DIRECTORIES(/opt/acml5.3.1/gfortran64/include)
+LINK_Directories(/opt/acml5.3.1/gfortran64/lib)
 
 SET(CUDA_ARCHITECTURE "-arch=sm_20" CACHE STRING "The CUDA architecture to compile for, i.e. -arch=sm_20")
 SET(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};${CUDA_ARCHITECTURE}")

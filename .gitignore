@@ -1,0 +1,11 @@
+#backup
+*~
+*.kate-swp
+
+#generated files
+build
+libdamascene.so
+damascene.so
+*.pyc
+bindings/damascene.cpp
+lena_gpb.png
